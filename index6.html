@@ -6,17 +6,17 @@
     <title>forms in HTML</title>
 </head>
 <body>
-    <style>
-        img {
-            float: left;
-        }
-    </style>
-    <img src="https://haneiace.com/assets/images/img/ace-hane-extra-living-spaces.webp" width="300" height="300">
-    <form>
-        <label>UserName</label><br>
-        <input type="text" name="Username" id="Name"><br><br>
-        <label>Email ID</label><br>
+        <form>
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label>First Name</label><br>
+        <input type="text" name="fname" id="Name"><br><br>
+        <label>Last Name</label><br>
+        <input type="text" name="lname" id="name"><br><br>
+        <label for="email">Email ID</label><br>
         <input type="text" name="Email ID" id="Email"><br><br>
+        <label for="email">password</label>
+        <input type="password" name="password"><br><br>
         <label>Contact NO.</label><br>
         <input type="text" name="India (+91) Mobile" id="contact"><br><br>
         <label>Gender</label><br>
@@ -25,8 +25,10 @@
         <label>City</label><br>
         <input type="checkbox" id="City" value="New Delhi">New Delhi <br>
         <input type="checkbox" id="City" value="Mumbai">Mumbai <br>
-        <input type="submit">
 
+        <center><input type="submit" name="submit" value="submit"></center>
+        <input type="reset" name="reset" value="reset">
+        </fieldset>
     </form>
 </body>
 </html>
